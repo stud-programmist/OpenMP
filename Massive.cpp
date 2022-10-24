@@ -46,8 +46,8 @@ int main()
 
     // Задаём размеры массива и вектора
     printf("Enter size for matrix: \n");
-    scanf("%d", &i); //ñòðîêà
-    scanf("%d", &j); //ñòîëáåö
+    scanf("%d", &i); //строка
+    scanf("%d", &j); //столбец
     printf("\n");
 
     printf("Enter size for vector: \n");
