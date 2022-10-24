@@ -6,13 +6,13 @@
 using namespace std;
 
 int i,j,h,np,id, stp, mod, endp;
-
+//–†–∞–∑–±–∏–µ–Ω–∏–µ —Å—Ç—Ä–æ–∫ –ø–æ –ø–æ—Ç–æ–∫–∞–º
 void getr_rows_for_thread(int getnum, int x)
 {
 	 np=i/getnum;
 	 mod=i%getnum;
 }
-
+//"–ì—Ä–∞–Ω–∏—Ü—ã" —Å—Ç—Ä–æ–∫ –º–∞—Ç—Ä–∏—Ü—ã –¥–ª—è –∫–∞–∂–¥–æ–≥–æ –ø–æ—Ç–æ–∫–∞
 void startend_for_thread(int getid)
 {
     if(getid < mod)
@@ -26,7 +26,7 @@ void startend_for_thread(int getid)
          endp = np + stp;
       }
 }
-
+//–í—ã–≤–æ–¥ –ø—Ä–æ–∏–∑–≤–µ–¥–µ–Ω–∏—è –º–∞—Ç—Ä–∏—Ü—ã –Ω–∞ –≤–µ–∫—Ç–æ—Ä
 void printMatrix(int** x, int n, int m)
 {
   for (int q = 0; q < n; q++)
@@ -44,17 +44,17 @@ int main()
 {
     srand(time(0));
 
-    // «‡‰‡∏Ï ‡ÁÏÂ˚ Ï‡ÒÒË‚‡ Ë ‚ÂÍÚÓ‡
+    // –ó–∞–¥–∞—ë–º —Ä–∞–∑–º–µ—Ä—ã –º–∞—Å—Å–∏–≤–∞ –∏ –≤–µ–∫—Ç–æ—Ä–∞
     printf("Enter size for matrix: \n");
-    scanf("%d", &i); //ÒÚÓÍ‡
-    scanf("%d", &j); //ÒÚÓÎ·Âˆ
+    scanf("%d", &i); //√±√≤√∞√Æ√™√†
+    scanf("%d", &j); //√±√≤√Æ√´√°√•√∂
     printf("\n");
 
     printf("Enter size for vector: \n");
     scanf("%d", &h); //
     printf("\n");
 
-    // ¬˚‰ÂÎÂÌËÂ Ô‡ÏˇÚË ‰Îˇ Ï‡ÒÒË‚‡ Ë ‚ÂÍÚÓ‡
+    // –í—ã–¥–µ–ª–µ–Ω–∏–µ –ø–∞–º—è—Ç–∏ –¥–ª—è –º–∞—Å—Å–∏–≤–∞ –∏ –≤–µ–∫—Ç–æ—Ä–∞
     int **a = new int* [i];
     for (int cn = 0; cn < i; cn++)
         a[cn] = new int [j];
@@ -63,7 +63,7 @@ int main()
     for (int cn = 0; cn < h; cn++)
         b[cn] = new int [1];
 
-    //¬˚‚Ó‰ Ï‡ÒÒË‚‡ Ë ‚ÂÍÚÓ‡
+    //–í—ã–≤–æ–¥ –º–∞—Å—Å–∏–≤–∞ –∏ –≤–µ–∫—Ç–æ—Ä–∞
     printf("Elements of matrix: \n");
     printMatrix(a, i, j);
     printf("\n");
@@ -72,7 +72,7 @@ int main()
     printMatrix(b, h, 1);
     printf("\n");
 
-    // œÓËÁ‚Â‰ÂÌËÂ Ï‡ÚËˆ˚ Ë ‚ÂÍÚÓ‡
+    // –ü—Ä–æ–∏–∑–≤–µ–¥–µ–Ω–∏–µ –º–∞—Ç—Ä–∏—Ü—ã –∏ –≤–µ–∫—Ç–æ—Ä–∞
     printf("Result:\n");
     if(j==h)
     {
@@ -101,12 +101,12 @@ int main()
 				c[x][d]=c[x][d]+a[x][v]*b[v][d];
 		    }
         }    
-	// ¬˚‚Ó‰ ÂÁÛÎ¸Ú‡Ú‡
+	// –í—ã–≤–æ–¥ —Ä–µ–∑—É–ª—å—Ç–∞—Ç–∞
 	    for(int g = 0; g < i; g++)
 	        for(int d = 0; d < 1; d++)
 		        printf("%d \n", c[g][d]);
 
-	// ŒÒ‚Ó·ÓÊ‰ÂÌËÂ Ô‡ÏˇÚË ‰ËÌ‡ÏË˜ÂÒÍÓ„Ó Ï‡ÒÒË‚‡
+	// –û—Å–≤–æ–±–æ–∂–¥–µ–Ω–∏–µ –ø–∞–º—è—Ç–∏ –¥–∏–Ω–∞–º–∏—á–µ—Å–∫–æ–≥–æ –º–∞—Å—Å–∏–≤–∞
 	    for (int cn = 0; cn < i; cn++)
              delete []c[cn];
 	
@@ -114,7 +114,7 @@ int main()
 	else
 	    printf("Multi matrix and vector is impossible \n");
 
-// ŒÒ‚Ó·ÓÊ‰ÂÌËÂ Ô‡ÏˇÚË ‰ËÌ‡ÏË˜ÂÒÍÓ„Ó Ï‡ÒÒË‚‡
+// –û—Å–≤–æ–±–æ–∂–¥–µ–Ω–∏–µ –ø–∞–º—è—Ç–∏ –¥–∏–Ω–∞–º–∏—á–µ—Å–∫–æ–≥–æ –º–∞—Å—Å–∏–≤–∞
     printf("\n");
     for (int cn = 0; cn < i; cn++)
         delete []a[cn];
